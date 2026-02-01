@@ -719,3 +719,24 @@ section{
     max-height: 120px !important;
   }
 }
+/* ============================================================
+   Centrar "Puntos clave" y la lista en celulares
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .summary-subtitle {
+    text-align: center !important;
+  }
+
+  .summary-list {
+    text-align: center !important;
+    margin-left: 0 !important;   /* elimina indentación */
+    padding-left: 0 !important;  /* elimina sangría */
+    list-style-position: inside !important; /* bullets centrados */
+  }
+
+  .summary-list li {
+    margin-bottom: 6px;
+  }
+}
