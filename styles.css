@@ -682,4 +682,40 @@ section{
     max-height: 120px !important;
   }
 }
+/* ============================================================
+   FIX DEFINITIVO: Imagen del header invisible en celulares
+   ============================================================ */
 
+@media (max-width: 900px) {
+
+  /* Evita que el contenedor recorte la imagen */
+  .brand-with-image {
+    overflow: visible !important;
+  }
+
+  /* Asegura que la imagen siempre se renderice */
+  .brand-image {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    display: block !important;
+    object-fit: contain !important;
+  }
+
+  /* Evita que el header sticky tape la imagen */
+  .site-header {
+    overflow: visible !important;
+  }
+
+  /* Reduce padding para que la imagen tenga espacio */
+  .site-header .container {
+    padding: 6px 10px !important;
+  }
+}
+
+/* Para celulares muy pequeños (≤360px) */
+@media (max-width: 360px) {
+  .brand-image {
+    max-height: 120px !important;
+  }
+}
