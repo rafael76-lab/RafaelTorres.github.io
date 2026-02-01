@@ -523,4 +523,49 @@ section{
     text-align: center;
   }
 }
+/* ============================================================
+   Ajuste de info-grid para celulares — mismo grosor que about-main
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  /* Hace que info-grid sea angosto como about-main */
+  .info-grid {
+    max-width: 520px;     /* mismo ancho visual que tu texto */
+    margin: 0 auto;       /* lo centra */
+    padding: 0 16px;      /* mismo padding que el resto del sitio */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Hero card más compacta */
+  .hero-card {
+    padding: 16px;
+  }
+
+  /* Social cards en columna */
+  .social-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .social-card {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  /* Icono grande ajustado */
+  .solo-icon-link img {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  /* Educación también compacta */
+  .stats-card {
+    padding: 16px;
+  }
+}
 
