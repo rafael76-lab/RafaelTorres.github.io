@@ -440,4 +440,87 @@ section{
 .site-footer a {
   color: inherit;
 }
+/* ============================================================
+   RESPONSIVE EXTRA — Mejor adaptación a tablets y celulares
+   ============================================================ */
+
+/* Tablets (≤900px) */
+@media (max-width: 900px) {
+
+  /* Ajusta info-grid a una sola columna */
+  .info-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* Social cards centradas y en columna */
+  .social-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-card {
+    width: 80%;
+    max-width: 260px;
+  }
+
+  /* Iconos grandes ajustados */
+  .solo-icon img,
+  .solo-icon-link img {
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+  }
+}
+
+/* Celulares (≤600px) */
+@media (max-width: 600px) {
+
+  /* Reduce padding general */
+  .container {
+    padding: 12px;
+  }
+
+  /* Hero más compacto */
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  /* About más compacto */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-photo {
+    margin-left: 0 !important;
+  }
+
+  .profile-img {
+    max-width: 200px;
+  }
+
+  /* Social cards más pequeñas */
+  .social-card {
+    width: 100%;
+    max-width: 240px;
+  }
+
+  /* Iconos grandes aún más adaptables */
+  .solo-icon img,
+  .solo-icon-link img {
+    max-width: 260px;
+  }
+
+  /* Projects grid más fluido */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Ajuste de texto */
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+}
 
