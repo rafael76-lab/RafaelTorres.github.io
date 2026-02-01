@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rafael García del Valle Torres — Portafolio</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand brand-with-image">
+        <img
+          src="images/title.png"
+          srcset="images/title-600x100.png 600w,
+                  images/title-900x150.png 900w,
+                  images/title.png 1200w"
+          sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
+          alt="Mapa tecnológico estilo caricatura"
+          width="1200"
+          height="200"
+          class="brand-image"
+          loading="lazy"
+        >
+      </div>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a class="btn btn-outline" href="#projects">Proyectos</a>
+        <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Nombre / Rol -->
+  <div class="brand-text container">
+    <h1>Rafael García del Valle Torres</h1>
+    <p class="role">Data Engineer · Data Scientist · MLE</p>
+  </div>
+
+  <!-- Acerca de mí -->
+  <section id="about" class="about container">
+  <div class="about-grid">
+
+    <!-- Columna 1: Foto -->
+    <figure class="about-photo">
+      <img
+        src="images/profile.jpg"
+        alt="Foto de Rafael García del Valle"
+        loading="lazy"
+        class="profile-img"
+      />
+    </figure>
+
+    <!-- Columna 2: Texto -->
+    <div class="about-main">
+      <div class="about-content">
+        <h2>Acerca de mí</h2>
+
+        <div class="about-summary-box">
+          <p class="summary-text">
+            Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y una
+            evolución natural hacia el <strong>diseño y construcción de pipelines de datos</strong>. Me formé en
+            <strong>Ciencia de Datos</strong> y he trabajado con <strong>datasets de gran volumen</strong>, realizando procesos de
+            ingestión, limpieza, validación, feature engineering y organización de repositorios para análisis confiables y
+            reutilizables. En la <strong>Cámara de Diputados</strong> y en proyectos académicos desarrollé flujos end-to-end en
+            <strong>Python</strong> y <strong>SQL</strong>. Busco consolidarme como <strong>Data Engineer</strong>, con foco en
+            soluciones escalables y orientadas a producción.
+          </p>
+
+          <h4 class="summary-subtitle">Puntos clave</h4>
+          <ul class="summary-list">
+            <li><strong>Rol objetivo:</strong> Data Engineer.</li>
+            <li><strong>Base técnica:</strong> Python; SQL; grandes volúmenes.</li>
+            <li><strong>Experiencia:</strong> ETL, validación y feature engineering.</li>
+            <li><strong>Proyectos:</strong> pipelines end-to-end y apps de datos.</li>
+            <li><strong>Enfoque:</strong> escalabilidad y automatización.</li>
+          </ul>
+        </div>
+
+        <div class="about-meta">
+          <p><strong>Ubicación</strong> Edo. México</p>
+          <p><strong>Stack</strong> Python; SQL; GCP; AWS; Docker; FastAPI</p>
+          <p><strong>Intereses</strong> ML aplicado, reproducibilidad, ETL</p>
+        </div>
+      </div>
+
+  </div>
+</section>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+
+      <div class="hero-card glass">
+        <h2 class="hero-title">Transformo datos en decisiones</h2>
+        <p class="hero-sub">Pipelines, feature engineering y modelos desplegados. Python · SQL · Cloud</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
+          <a class="btn btn-ghost" href="#projects">Ver proyectos</a>
+        </div>
+      </div>
+
+      <aside class="stats-card glass">
+        <ul>
+          <li><strong>Máster</strong> Ciberseguridad (UCAM) 2024–2025</li>
+          <li><strong>Máster</strong> Ciencia de Datos DEV.f 2023</li>
+          <li><strong>CFA</strong> Nivel I aprobado 2025</li>
+          <li><strong>Stack</strong> Python · SQL · GCP · AWS · Docker</li>
+        </ul>
+      </aside>
+
+    </div>
+  </section>
+  <section id="skills-visualization" class="skills-section">
+  <div class="skills-container">
+
+    <!-- Columna izquierda: habilidades -->
+    <div class="skills-box">
+      <h3>Habilidades técnicas</h3>
+      <ul class="skills-list">
+        <li><strong>Lenguajes:</strong> Python, SQL</li>
+        <li><strong>Data Engineering:</strong> limpieza, validación, normalización, feature engineering</li>
+        <li><strong>Pipelines:</strong> ETL end-to-end, reproducibilidad, automatización</li>
+        <li><strong>Visualización:</strong> Plotly, Matplotlib</li>
+        <li><strong>Machine Learning:</strong> scikit-learn, NLP básico</li>
+        <li><strong>Herramientas:</strong> Git, GitHub, Streamlit</li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha: gráfico -->
+    <div class="viz-box">
+      <h3>Visualización interactiva</h3>
+
+      <!-- Opción A: iframe (Streamlit) -->
+      <iframe
+        src="https://TU_APP_STREAMLIT.streamlit.app"
+        width="100%"
+        height="450"
+        frameborder="0">
+      </iframe>
+
+  <main>
+
+    <!-- Proyectos -->
+    <section id="projects" class="projects container">
+      <h3>Proyectos</h3>
+
+      <div class="projects-grid">
+        <article class="project-card glass">
+          <h4>Aplicación Web de Datos</h4>
+          <p>Ingestión de CSV y visualización interactiva con Streamlit y Plotly.</p>
+          <p class="meta"><strong>Stack</strong> Python; pandas; Streamlit; Plotly</p>
+          <a class="btn btn-sm" href="#">Ver detalles</a>
+        </article>
+
+        <article class="project-card glass">
+          <h4>Análisis de Viajes y Clima</h4>
+          <p>Integración SQL y Python para evaluar impacto del clima en duración de viajes.</p>
+          <p class="meta"><strong>Stack</strong> SQL; Python; pandas</p>
+          <a class="btn btn-sm" href="#">Ver detalles</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experience" class="container experience">
+      <h3>Experiencia</h3>
+
+      <div class="timeline glass">
+        <div class="timeline-item">
+          <h4>Especialista Técnico Data & Analytics — Cámara de Diputados</h4>
+          <p class="muted">03/2025 – 02/2026 · México</p>
+          <ul>
+            <li>Diseño y mantenimiento de datasets históricos municipales (1989–2025).</li>
+            <li>Data cleaning, validación y pipelines en Python.</li>
+            <li>Feature engineering financiero y proyecciones.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Técnicas -->
+    <section id="skills" class="container skills">
+      <h3>Habilidades Técnicas</h3>
+      <div class="skills-grid glass">
+        <p><strong>Lenguajes</strong> Python; SQL; Bash</p>
+        <p><strong>ML</strong> scikit-learn; TensorFlow; PyTorch</p>
+        <p><strong>Cloud</strong> GCP; AWS; Azure</p>
+        <p><strong>Infra</strong> Docker; REST APIs; FastAPI; Flask</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © Rafael García del Valle · Edo. México ·
+        <a href="mailto:rafaelgarciadelvalletorres@gmail.com">rafaelgarciadelvalletorres@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
