@@ -362,3 +362,82 @@ section{
 .about-meta{
   margin-top:32px; /* baja el bloque completo */
 }
+.social-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-card {
+  background: #0d0d0d;
+  border: 1px solid #00eaff55;
+  border-radius: 12px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: #e0e0e0;
+  box-shadow: 0 0 15px #00eaff33;
+  transition: 0.3s;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px #00eaffaa;
+}
+
+.social-card .icon {
+  margin-bottom: 10px;
+}
+
+.social-card span {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:20px;
+  margin-top:20px;
+}
+.solo-icon img {
+  width: 360px;     /* Aumenta el tamaño */
+  height: 130px;
+  border-radius: 8px; /* Opcional */
+  filter: none;       /* Quita cualquier oscurecimiento */
+  opacity: 1;         /* Asegura que no esté opaca */
+}
+.solo-icon-link img {
+  width: 360px;
+  height: 130px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solo-icon-link img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px#00eaff88;
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px #00eaff55;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card.full-width {
+  grid-column: 1 / -1;
+  justify-self: center;
+  max-width: 700px;
+}
+.site-footer a {
+  color: inherit;
+}
+
