@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rafael García del Valle Torres — Portafolio</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand brand-with-image">
+        <img
+          src="images/title.png"
+          srcset="images/title-600x100.png 600w,
+                  images/title-900x150.png 900w,
+                  images/title.png 1200w"
+          sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
+          alt="Mapa tecnológico estilo caricatura"
+          width="1200"
+          height="200"
+          class="brand-image"
+          loading="lazy"
+        >
+      </div>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a class="btn btn-outline" href="#projects">Proyectos</a>
+        <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Nombre / Rol -->
+  <div class="brand-text container">
+    <h1>Rafael García del Valle Torres</h1>
+    <p class="role">Data Engineer · Data Scientist · MLE</p>
+  </div>
+
+  <!-- Acerca de mí -->
+  <section id="about" class="about container">
+  <div class="about-grid">
+
+    <!-- Columna 1: Foto -->
+    <figure class="about-photo">
+      <img
+        src="images/profile.jpg"
+        alt="Foto de Rafael García del Valle"
+        loading="lazy"
+        class="profile-img"
+      />
+    </figure>
+
+    <!-- Columna 2: Texto -->
+    <div class="about-main">
+      <div class="about-content">
+        <h2>Acerca de mí</h2>
+
+        <div class="about-summary-box">
+          <p class="summary-text">
+  Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y una
+  evolución natural hacia el <strong>diseño y construcción de pipelines de datos</strong>. Me formé en
+  <strong>Ciencia de Datos</strong> y he trabajado con <strong>datasets masivos</strong>, para los cuales fue necesario realizar procesos de
+  ingestión, limpieza, validación y feature engineering para volverlos útiles. Después me encargué de su organización en un repositorio, de tal forma que fueran útiles para análisis posteriores y que los datos fueran
+  reutilizables por no técnicos. En mi rol como especialista técnico en la <strong>Cámara de Diputados</strong> y en diversos proyectos he tenido la oportunidad de aplicar mis conocimientos en entornos reales, desarrollando <strong>flujos end‑to‑end en Python</strong>. Además, he tenido la oportunidad de crear <strong>consultas SQL</strong> complejas en proyectos académicos basados en casos reales (joins, subconsultas anidadas, window functions). Busco consolidarme como <strong>Data Engineer</strong>, con foco en
+  soluciones escalables y orientadas a producción.
+</p>
+          <h4 class="summary-subtitle">Puntos clave</h4>
+          <ul class="summary-list">
+            <li><strong>Rol objetivo:</strong> Data Engineer.</li>
+            <li><strong>Base técnica:</strong> Python; SQL; Estadística; GitHub; Git.</li>
+            <li><strong>Experiencia:</strong> ETL, Arquitectura de datos.</li>
+            <li><strong>Proyectos:</strong> pipelines end-to-end y apps de datos.</li>
+            <li><strong>Enfoque:</strong> automatización, escalabilidad y organización</li>
+          </ul>
+        </div>
+
+        <div class="about-meta">
+          <p><strong>Ubicación</strong> Edo. México</p>
+          <p><strong>Stack</strong> Python; SQL</p>
+          <p><strong>Intereses</strong> ML aplicado, reproducibilidad, ETL</p>
+        </div>
+      </div>
+
+  </div>
+</section>
+<section class="info-grid">
+
+  <!-- Izquierda: cuadro con botones -->
+  <div class="hero-card glass">
+    <h2 class="hero-title">Conecta conmigo</h2>
+
+    <div class="social-cards">
+      <!-- LinkedIn -->
+      <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.8c0-1.9 0-4.3-2.6-4.3s-3 2-3 4.1V24h-4V8z"/>
+          </svg>
+        </div>
+        <span>LinkedIn</span>
+      </a>
+
+      <!-- GitHub -->
+      <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.55-3.87-1.55-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.72-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.27.45-2.3 1.2-3.11-.12-.3-.52-1.52.1-3.17 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.65.23 2.87.11 3.17.75.81 1.2 1.84 1.2 3.11 0 4.43-2.69 5.4-5.25 5.68.41.36.77 1.08.77 2.18v3.23c0 .31.2.67.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+          </svg>
+        </div>
+        <span>GitHub</span>
+      </a>
+
+      <!-- Email -->
+      <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M12 13 2 6.76V18h20V6.76L12 13zm10-9H2l10 6.25L22 4z"/>
+          </svg>
+        </div>
+        <span>Correo</span>
+      </a>
+      <a href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" 
+   target="_blank" 
+   class="solo-icon-link">
+  <img src="images/hands.png" alt="Imagen" />
+</a>
+    </div>
+  </div>
+
+  <!-- Derecha: Educación -->
+  <aside class="stats-card glass">
+    <p style="font-size: 1.5em; font-weight: bold; margin: 0; color:#00eaff;">Educación</p>
+    <ul>
+      <li><strong>Data Scientist</strong> TripleTen Bootcamp 2025-2026</li>
+      <li><strong>Máster</strong> Ciencia de Datos DEV.F 2023-2024</li>
+      <li><strong>Máster</strong> Ciberseguridad (UCAM) 2024–2025</li>
+      <li><strong>CFA</strong> Nivel I aprobado 2025</li>
+    </ul>
+  </aside>
+
+</section>
+    </div>
+  </section>
+  <section id="skills-visualization" class="skills-section about-main">
+  <div class="skills-container">
+    <div class="viz-box">
+      <h3 style="color:#00eaff;">Dashboard de precios Ajustados de Apple</h3>
+      <iframe
+        src="https://yahoo-finance-api-t2kz.onrender.com/"
+        width="100%"
+        height="450"
+        frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  <main>
+    <!-- Proyectos -->
+    <section id="projects" class="projects container">
+      <h3>Proyectos</h3>
+
+      <div class="projects-grid">
+        <article class="project-card glass">
+  <h4>Dashboard interactivo de visualización de datos con Streamlit y Plotly</h4>
+  <p>El proyecto consistió en desarrollar y desplegar un panel de control de una aplicación web para visualizar datos de anuncios de venta de coches, permitiendo al usuario generar gráficos interactivos como histogramas y diagramas de dispersión mediante dos botones; el resultado fue una aplicación funcional, desplegada en Render y accesible desde un navegador, que incluye encabezados, gráficos interactivos y controles de interacción, cumpliendo con todos los criterios de evaluación y demostrando habilidades en desarrollo web y análisis de datos.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; Jupyter notebook; pandas; Streamlit; Plotly; GitHub; Git; render.com </p>
+  <a class="btn btn-sm" href="https://final-proyect-hxre.onrender.com/" target="_blank">Ver aplicación</a>
+</article>
+        <article class="project-card glass">
+  <h4>Análisis de datos de viajes compartidos y prueba de hipótesis con SQL y Python</h4>
+  <p>El proyecto consistió en realizar un estudio de caso analítico para Zuber, una empresa de viajes compartidos en Chicago, utilizando SQL y Python para analizar patrones en los viajes, preferencias de los pasajeros y el impacto del clima en la duración de los recorridos; se trabajó con varias tablas que incluían información de barrios, taxis, viajes y registros meteorológicos, realizando consultas para agrupar viajes por empresa, identificar los barrios con más finalizaciones y probar la hipótesis de que la duración de los viajes del Loop a O’Hare cambia los sábados lluviosos; el resultado fue un análisis completo que permitió visualizar las empresas de taxis más activas, los barrios más populares y confirmar la influencia de las condiciones climáticas en la duración de los viajes, integrando SQL, Python, pandas y visualizaciones para extraer conclusiones claras y fundamentadas.</p>
+  <p class="meta"><strong>Tecnologías</strong> SQL; Python; pandas; Scikit-learn; Plotly</p>
+</article>
+<article class="project-card glass">
+    <h4>Dashboard Financiero Interactivo</h4>
+    <p>Este proyecto consistió en construir un dashboard interactivo especialmente para esta página en el que se puede visualizar el precio de la acciones de apple a un año, en tiempo real, integrando Streamlit, pandas y la API de yfinance. Este proyecto está desplegado en render y es visible dentro de esta página con fines de demostración.</p>
+    <p class="meta"><strong>Tecnologías</strong> Python; pandas; Streamlit; yfinance; GitHub; Render.com</p>
+    <a class="btn btn-sm" href="#skills-visualization">Ver dashboard</a>
+  </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © Rafael García del Valle · Edo. México ·
+        <a href="mailto:rafaelgarciadelvalletorres@gmail.com">rafaelgarciadelvalletorres@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
