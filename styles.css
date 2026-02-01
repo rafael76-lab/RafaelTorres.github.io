@@ -568,4 +568,80 @@ section{
     padding: 16px;
   }
 }
+/* ============================================================
+   RESPONSIVE DEFINITIVO PARA info-grid (celulares y tablets)
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+  /* Info-grid en una sola columna y centrado */
+  .info-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    max-width: 520px !important;   /* mismo grosor que about-main */
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+  }
+
+  /* Hero-card (botones) más pequeño */
+  .hero-card {
+    padding: 16px !important;
+    transform: scale(0.95);        /* lo hace más compacto */
+  }
+
+  /* Social cards más pequeñas */
+  .social-cards {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+
+  .social-card {
+    width: 100% !important;
+    max-width: 240px !important;
+    padding: 14px !important;
+  }
+
+  /* Icono grande ajustado */
+  .solo-icon-link img {
+    width: 100% !important;
+    max-width: 220px !important;
+    height: auto !important;
+  }
+
+  /* Educación debajo del cuadro de botones */
+  .stats-card {
+    order: 2 !important;
+    padding: 16px !important;
+  }
+
+  /* Hero-card siempre arriba */
+  .hero-card {
+    order: 1 !important;
+  }
+}
+
+/* ============================================================
+   Ajuste extra para celulares pequeños (≤600px)
+   ============================================================ */
+
+@media (max-width: 600px) {
+
+  .info-grid {
+    max-width: 480px !important;
+  }
+
+  .hero-card {
+    transform: scale(0.90);   /* aún más pequeño */
+  }
+
+  .social-card {
+    max-width: 220px !important;
+  }
+
+  .solo-icon-link img {
+    max-width: 200px !important;
+  }
+}
 
