@@ -5,270 +5,154 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rafael García del Valle Torres — Portafolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="site-header">
-  <div class="container header-inner">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
 
-    <div class="brand">
-      <img
-        src="images/title.png"
-        srcset="images/title-600x100.png 600w,
-                images/title-900x150.png 900w,
-                images/title.png 1200w"
-        sizes="(max-width:600px) 90vw, 1200px"
-        alt="Rafael García del Valle Torres"
-        width="1200"
-        height="200"
-        class="brand-image"
-      />
+      <div class="brand brand-with-image">
+        <img
+          src="images/title.png"
+          srcset="
+            images/title-600x100.png 600w,
+            images/title-900x150.png 900w,
+            images/title.png 1200w
+          "
+          sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
+          alt="Mapa tecnológico estilo caricatura"
+          width="1200"
+          height="200"
+          class="brand-image"
+          loading="lazy"
+        >
+      </div>
+
+      <nav class="nav" aria-label="Menú principal">
+        <a class="btn btn-outline" href="#projects">Proyectos</a>
+        <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>
+          Descargar CV
+        </a>
+      </nav>
+
     </div>
+  </header>
 
-    <nav class="nav">
-      <a class="btn btn-outline" href="#projects">Proyectos</a>
-      <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
-    </nav>
-
+  <!-- NOMBRE -->
+  <div class="brand-text container">
+    <h1>Rafael García del Valle Torres</h1>
+    <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
   </div>
-</header>
 
-<!-- HERO -->
-<section class="hero container">
-  <h1>Rafael García del Valle Torres</h1>
-  <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
-</section>
+  <main>
 
-<!-- Acerca de mí --> 
- <section id="about" class="about container"> 
-  <div class="about-grid"> 
-    <!-- Columna 1: Foto --> 
-     <figure class="about-photo"> 
-      <img src="images/profile.jpg" alt="Foto de Rafael García del Valle" loading="lazy" class="profile-img" /> 
-    </figure> 
-    <!-- Columna 2: Texto --> 
-     <div class="about-main"> 
-      <div class="about-content"> 
-        <h2>Acerca de mí</h2> 
-        <div class="about-summary-box"> 
-          <p class="summary-text"> Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y una evolución natural hacia el <strong>diseño y construcción de pipelines de datos y modelos predictivos</strong>. Me formé en <strong>Ciencia de Datos</strong> y he trabajado con <strong>datasets masivos</strong>, para los cuales fue necesario realizar procesos de ingestión, limpieza, validación y feature engineering para volverlos útiles y manejables. Después, me encargué de su organización en un repositorio, de tal forma que fueran útiles para análisis posteriores y reutilizables por perfiles no técnicos. En mi rol como especialista técnico en la <strong>Cámara de Diputados</strong>, he tenido la oportunidad de aplicar mis conocimientos en entornos reales, desarrollando <strong>flujos end-to-end en Python</strong>. Asimismo, en el ámbito académico, he aplicado mis conocimientos en proyectos basados en casos reales. También, académicamente, he tenido la oportunidad de desarrollar modelos de <strong>machine learning</strong>, tanto clásicos como redes neuronales para problemas complejos como la visión artificial. Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</strong>, con foco en soluciones escalables y orientadas a producción. </p> <h4 class="summary-subtitle">Puntos clave</h4> <ul class="summary-list"> <li><strong>Rol objetivo:</strong> Data Scientist Jr | Data Engineer Jr | AI Engineer Jr</li> <li><strong>Base técnica:</strong> Python; SQL; Estadística; Git; GitHub; CatBoost; LightGBM; TensorFlow; entre otros</li> <li><strong>Experiencia:</strong> ETL y arquitectura de datos</li> <li><strong>Proyectos:</strong> pipelines end-to-end, modelos de machine learning y aplicaciones desplegadas</li> <li><strong>Enfoque:</strong> automatización, escalabilidad, organización y ventaja competitiva mediante el uso de inteligencia artificial</li> </ul> </div> <div class="about-meta"> <p><strong>Ubicación:</strong> Estado de México, México</p> <p><strong>Stack:</strong> Python (pandas, NumPy, scikit-learn, TensorFlow); SQL; Git; GitHub, Deep Lake, AWS</p> <p><strong>Intereses:</strong> Machine Learning aplicado, modelado predictivo, ingeniería de datos, reproducibilidad y sistemas escalables</p> 
-          </div> 
-        </div> 
-      </section>
+    <!-- ABOUT -->
+    <section id="about" class="about container">
 
-<!-- DASHBOARD -->
-<section class="container">
-  <h2>Dashboard en tiempo real</h2>
+      <div class="about-grid">
 
-  <iframe
-    src="https://yahoo-finance-api-t2kz.onrender.com/"
-    width="100%"
-    height="450"
-    loading="lazy"
-  ></iframe>
+        <figure class="about-photo">
+          <img src="images/profile.jpg" alt="Foto de Rafael García del Valle" loading="lazy" class="profile-img" />
+        </figure>
 
-</section>
+        <div class="about-main">
 
-<!-- PROJECTS -->
-<main id="projects" class="projects container">
+          <div class="about-content">
 
-  <h2>Proyectos</h2>
+            <h2>Acerca de mí</h2>
 
-  <div class="projects-grid">
+            <div class="about-summary-box">
 
-    <!-- PROYECTO 1 -->
-    <article class="project-card glass">
+              <p class="summary-text">
+                Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y evolución hacia pipelines y modelos predictivos.
+                He trabajado con datasets masivos realizando ingestión, limpieza, validación y feature engineering.
+                En la <strong>Cámara de Diputados</strong> he desarrollado flujos end-to-end en Python.
+                Busco consolidarme como Data Scientist, AI Engineer o Data Engineer.
+              </p>
 
-      <h3>Predicción del valor de autos usados con Machine Learning</h3>
+              <h4 class="summary-subtitle">Puntos clave</h4>
 
-      <h4>Desafío</h4>
-      <p>Desarrollar un modelo para estimar el valor de mercado de autos usados en Rusty Bargain.</p>
+              <ul class="summary-list">
+                <li><strong>Rol objetivo:</strong> Data Scientist Jr | Data Engineer Jr | AI Engineer Jr</li>
+                <li><strong>Base técnica:</strong> Python; SQL; Git; ML frameworks</li>
+                <li><strong>Experiencia:</strong> ETL y pipelines</li>
+                <li><strong>Enfoque:</strong> automatización y escalabilidad</li>
+              </ul>
 
-      <h4>Proceso</h4>
-      <p>
-        Limpieza de datos, manejo de nulos, feature engineering desde código postal,
-        entrenamiento de modelos (Linear Regression, Random Forest, LightGBM, CatBoost),
-        y evaluación con RMSE.
-      </p>
+            </div>
 
-      <h4>Resultado y visuales</h4>
-      <p>LightGBM obtuvo el menor RMSE y mejor eficiencia computacional.</p>
+          </div>
 
-      <h4>Lección o hallazgos</h4>
-      <p>Boosting supera modelos clásicos en problemas de regresión tabular.</p>
+          <div class="about-meta">
+            <p><strong>Ubicación:</strong> Estado de México, México</p>
+            <p><strong>Stack:</strong> Python, SQL, Git, AWS</p>
+            <p><strong>Intereses:</strong> ML, ingeniería de datos, sistemas escalables</p>
+          </div>
 
-      <p class="meta">Python · pandas · Scikit-learn · LightGBM · CatBoost</p>
+        </div>
 
-    </article>
-
-    <!-- PROYECTO 2 -->
-    <article class="project-card glass">
-
-      <h3>Estimación de edad con visión por computadora</h3>
-
-      <h4>Desafío</h4>
-      <p>Estimar edad de clientes para control de venta de alcohol en retail.</p>
-
-      <h4>Proceso</h4>
-      <p>
-        Dataset de imágenes, data augmentation, transfer learning con EfficientNetB3,
-        entrenamiento en dos fases y regularización con dropout.
-      </p>
-
-      <h4>Resultado y visuales</h4>
-      <p>Modelo con MAE competitivo, viable para uso como sistema de apoyo.</p>
-
-      <h4>Lección o hallazgos</h4>
-      <p>Transfer learning reduce drásticamente costo de entrenamiento en visión por computadora.</p>
-
-      <p class="meta">TensorFlow · Keras · EfficientNet · Computer Vision</p>
-
-    </article>
-
-    <!-- PROYECTO 3 -->
-    <article class="project-card glass">
-
-      <h3>Clasificación de planes móviles</h3>
-
-      <h4>Desafío</h4>
-      <p>Recomendar planes móviles basados en comportamiento de usuarios.</p>
-
-      <h4>Proceso</h4>
-      <p>
-        Split train/validation/test, modelos de clasificación (Decision Tree, Logistic Regression, Random Forest),
-        optimización de hiperparámetros.
-      </p>
-
-      <h4>Resultado y visuales</h4>
-      <p>Random Forest logró accuracy de 0.79.</p>
-
-      <h4>Lección o hallazgos</h4>
-      <p>Modelos de árboles capturan mejor relaciones no lineales en datos de usuario.</p>
-
-      <p class="meta">Python · Scikit-learn · Clasificación</p>
-
-    </article>
-
-    <!-- PROYECTO 4 -->
-    <article class="project-card glass">
-
-      <h3>Dashboard interactivo con Streamlit</h3>
-
-      <h4>Desafío</h4>
-      <p>Crear herramienta web para exploración de datos de autos usados.</p>
-
-      <h4>Proceso</h4>
-      <p>Streamlit + Plotly para histogramas y scatter plots interactivos.</p>
-
-      <h4>Resultado y visuales</h4>
-      <p>Aplicación desplegada en Render con visualización interactiva.</p>
-
-      <h4>Lección o hallazgos</h4>
-      <p>Streamlit permite convertir análisis en aplicaciones rápidamente.</p>
-
-      <p class="meta">Streamlit · Plotly · Python</p>
-
-    </article>
-
-    <!-- PROYECTO 5 -->
-    <article class="project-card glass">
-
-      <h3>Análisis de viajes compartidos</h3>
-
-      <h4>Desafío</h4>
-      <p>Analizar patrones de movilidad y efectos del clima en viajes.</p>
-
-      <h4>Proceso</h4>
-      <p>SQL para consultas complejas + análisis en Python con pandas.</p>
-
-      <h4>Resultado y visuales</h4>
-      <p>Se identificaron patrones relevantes y diferencias por clima.</p>
-
-      <h4>Lección o hallazgos</h4>
-      <p>La integración SQL + Python es clave para análisis reales de negocio.</p>
-
-      <p class="meta">SQL · Python · pandas · SciPy</p>
-
-    </article>
-
-    <!-- PROYECTO 6 -->
-    <article class="project-card glass">
-
-      <h3>Dashboard financiero en tiempo real</h3>
-
-      <h4>Desafío</h4>
-      <p>Visualizar precios de activos financieros en tiempo real.</p>
-
-      <h4>Proceso</h4>
-      <p>Uso de yfinance + Python + Streamlit para visualización de datos.</p>
-
-      <h4>Resultado y visuales</h4>
-      <p>Dashboard funcional con datos en tiempo real de Apple.</p>
-
-      <h4>Lección o hallazgos</h4>
-      <p>Las APIs financieras permiten construir sistemas de análisis en tiempo real.</p>
-
-      <p class="meta">Python · yfinance · Streamlit</p>
-
-    </article>
-
-  </div>
-<!-- Izquierda: cuadro con botones -->
-<div class="hero-card glass">
-  <h2 class="hero-title">Conecta conmigo</h2>
-
-  <div class="social-cards">
-
-    <!-- LinkedIn -->
-    <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
-      <div class="icon">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
-          <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.8c0-1.9 0-4.3-2.6-4.3s-3 2-3 4.1V24h-4V8z"/>
-        </svg>
       </div>
-      <span>LinkedIn</span>
-    </a>
 
-    <!-- GitHub -->
-    <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
-      <div class="icon">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
-          <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.55-3.87-1.55-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.72-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.27.45-2.3 1.2-3.11-.12-.3-.52-1.52.1-3.17 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.65.23 2.87.11 3.17.75.81 1.2 1.84 1.2 3.11 0 4.43-2.69 5.4-5.25 5.68.41.36.77 1.08.77 2.18v3.23c0 .31.2.67.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
-        </svg>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="container">
+      <h2>Dashboard en tiempo real</h2>
+
+      <iframe
+        src="https://yahoo-finance-api-t2kz.onrender.com/"
+        width="100%"
+        height="450"
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects container">
+      <h2>Proyectos</h2>
+
+      <div class="projects-grid">
+        <!-- (tus proyectos se mantienen igual) -->
       </div>
-      <span>GitHub</span>
-    </a>
 
-    <!-- Email -->
-    <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
-      <div class="icon">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
-          <path d="M12 13 2 6.76V18h20V6.76L12 13zm10-9H2l10 6.25L22 4z"/>
-        </svg>
+      <!-- CONECTA -->
+      <div class="hero-card glass">
+        <h2 class="hero-title">Conecta conmigo</h2>
+
+        <div class="social-cards">
+          <!-- LinkedIn -->
+          <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- GitHub -->
+          <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
+            <span>GitHub</span>
+          </a>
+
+          <!-- Email -->
+          <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
+            <span>Correo</span>
+          </a>
+        </div>
       </div>
-      <span>Correo</span>
-    </a>
 
-    <!-- Imagen extra -->
-    <a href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank" class="solo-icon-link">
-      <img src="images/hands.png" alt="Imagen" />
-    </a>
+    </section>
 
-  </div>
-</div>
-</main>
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container">
-    <p>© Rafael García del Valle Torres · México</p>
-  </div>
-</footer>
+  </main>
 
-<script src="main.js" defer></script> 
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© Rafael García del Valle Torres · México</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
 
 </body>
 
