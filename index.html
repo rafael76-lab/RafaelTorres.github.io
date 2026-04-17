@@ -5,153 +5,220 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Rafael García del Valle Torres — Portafolio</title>
 
+  <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand brand-with-image">
+        <img
+          src="images/title.png"
+          srcset="images/title-600x100.png 600w,
+                  images/title-900x150.png 900w,
+                  images/title.png 1200w"
+          sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
+          alt="Mapa tecnológico estilo caricatura"
+          width="1200"
+          height="200"
+          class="brand-image"
+          loading="lazy"
+        >
+      </div>
 
-    <div class="brand brand-with-image">
-      <img
-        src="images/title.png"
-        srcset="images/title-600x100.png 600w, images/title-900x150.png 900w, images/title.png 1200w"
-        sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
-        alt="Mapa tecnológico estilo caricatura"
-        width="1200"
-        height="200"
-        class="brand-image"
-      />
+      <nav class="nav" aria-label="Menú principal">
+        <a class="btn btn-outline" href="#projects">Proyectos</a>
+        <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
+      </nav>
     </div>
+  </header>
 
-    <nav class="nav" aria-label="Menú principal">
-      <a class="btn btn-outline" href="#projects">Proyectos</a>
-      <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
-    </nav>
-
+  <!-- Nombre / Rol -->
+  <div class="brand-text container">
+    <h1>Rafael García del Valle Torres</h1>
+    <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
   </div>
-</header>
 
-<!-- Nombre / Rol -->
-<section class="brand-text container">
-  <h1>Rafael García del Valle Torres</h1>
-  <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
-</section>
-
-<main>
-
-<!-- ABOUT -->
-<section id="about" class="about container">
-
+  <!-- Acerca de mí -->
+  <section id="about" class="about container">
   <div class="about-grid">
 
+    <!-- Columna 1: Foto -->
     <figure class="about-photo">
-      <img src="images/profile.jpg" alt="Foto de Rafael García del Valle" loading="lazy" class="profile-img" />
+      <img
+        src="images/profile.jpg"
+        alt="Foto de Rafael García del Valle"
+        loading="lazy"
+        class="profile-img"
+      />
     </figure>
 
+    <!-- Columna 2: Texto -->
     <div class="about-main">
-
       <div class="about-content">
         <h2>Acerca de mí</h2>
 
         <div class="about-summary-box">
           <p class="summary-text">
-            Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas...
-          </p>
-
+  Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y una
+evolución natural hacia el <strong>diseño y construcción de pipelines de datos y modelos predictivos</strong>. Me formé en
+<strong>Ciencia de Datos</strong> y he trabajado con <strong>datasets masivos</strong>, para los cuales fue necesario realizar procesos de
+ingestión, limpieza, validación y feature engineering para volverlos útiles y manejables. Después, me encargué de su organización en un repositorio, de tal forma que fueran útiles para análisis posteriores y reutilizables por perfiles no técnicos.
+En mi rol como especialista técnico en la <strong>Cámara de Diputados</strong>, he tenido la oportunidad de aplicar mis conocimientos en entornos reales, desarrollando <strong>flujos end-to-end en Python</strong>. Asimismo, en el ámbito académico, he aplicado mis conocimientos en proyectos basados en casos reales. También, académicamente, he tenido la oportunidad de desarrollar modelos de <strong>machine learning</strong>, tanto clásicos como redes neuronales para problemas complejos como la visión artificial.
+Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</strong>, con foco en soluciones escalables y orientadas a producción. 
+</p>
           <h4 class="summary-subtitle">Puntos clave</h4>
-
           <ul class="summary-list">
             <li><strong>Rol objetivo:</strong> Data Scientist Jr | Data Engineer Jr | AI Engineer Jr</li>
-            <li><strong>Base técnica:</strong> Python; SQL; Estadística; Git; GitHub; CatBoost; LightGBM; TensorFlow</li>
+            <li><strong>Base técnica:</strong> Python; SQL; Estadística; Git; GitHub; CatBoost; LightGBM; TensorFlow; entre otros</li>
             <li><strong>Experiencia:</strong> ETL y arquitectura de datos</li>
-            <li><strong>Proyectos:</strong> pipelines end-to-end y ML en producción</li>
-            <li><strong>Enfoque:</strong> automatización, escalabilidad e IA</li>
+            <li><strong>Proyectos:</strong> pipelines end-to-end, modelos de machine learning y aplicaciones desplegadas</li>
+            <li><strong>Enfoque:</strong> automatización, escalabilidad, organización y ventaja competitiva mediante el uso de inteligencia artificial</li>
           </ul>
         </div>
-      </div>
 
-      <div class="about-meta">
-        <p><strong>Ubicación:</strong> Estado de México, México</p>
-        <p><strong>Stack:</strong> Python; SQL; Git; AWS</p>
-        <p><strong>Intereses:</strong> ML, data engineering, sistemas escalables</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- DASHBOARD -->
-<section id="skills-visualization" class="skills-section about-main">
-  <div class="skills-container">
-    <div class="viz-box">
-      <h3 style="color:#00eaff;">Dashboard de precios Ajustados de Apple</h3>
-
-      <iframe
-        src="https://yahoo-finance-api-t2kz.onrender.com/"
-        width="100%"
-        height="450"
-        frameborder="0"
-        title="Dashboard financiero Apple"
-      ></iframe>
-
-    </div>
-  </div>
-</section>
-
-<!-- PROYECTOS -->
-<section id="projects" class="projects container">
-  <h3>Proyectos</h3>
-
-  <div class="projects-grid">
-
-    <!-- (tus proyectos sin cambios estructurales) -->
+        <div class="about-meta">
+  <p><strong>Ubicación:</strong> Estado de México, México</p>
+  <p><strong>Stack:</strong> Python (pandas, NumPy, scikit-learn, TensorFlow); SQL; Git; GitHub, Deep Lake, AWS</p>
+  <p><strong>Intereses:</strong> Machine Learning aplicado, modelado predictivo, ingeniería de datos, reproducibilidad y sistemas escalables</p>
+</div>
 
   </div>
 </section>
-
-<!-- CONTACTO -->
 <section class="info-grid">
+
+  <!-- Izquierda: cuadro con botones -->
   <div class="hero-card glass">
     <h2 class="hero-title">Conecta conmigo</h2>
 
     <div class="social-cards">
-
+      <!-- LinkedIn -->
       <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-1 1.8-2.2 3.8-2.2 4 0 4.7 2.6 4.7 6V24h-4v-7.8c0-1.9 0-4.3-2.6-4.3s-3 2-3 4.1V24h-4V8z"/>
+          </svg>
+        </div>
         <span>LinkedIn</span>
       </a>
 
+      <!-- GitHub -->
       <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M12 .5C5.73.5.5 5.73.5 12c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.55-3.87-1.55-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.4-1.27.72-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.27.45-2.3 1.2-3.11-.12-.3-.52-1.52.1-3.17 0 0 .97-.31 3.18 1.19a11 11 0 0 1 5.8 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.65.23 2.87.11 3.17.75.81 1.2 1.84 1.2 3.11 0 4.43-2.69 5.4-5.25 5.68.41.36.77 1.08.77 2.18v3.23c0 .31.2.67.8.56A10.99 10.99 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/>
+          </svg>
+        </div>
         <span>GitHub</span>
       </a>
 
+      <!-- Email -->
       <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
+        <div class="icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="#00eaff">
+            <path d="M12 13 2 6.76V18h20V6.76L12 13zm10-9H2l10 6.25L22 4z"/>
+          </svg>
+        </div>
         <span>Correo</span>
       </a>
+      <a href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" 
+   target="_blank" 
+   class="solo-icon-link">
+  <img src="images/hands.png" alt="Imagen" />
+</a>
+    </div>
+  </div>
 
+  <!-- Derecha: Educación -->
+  <aside class="stats-card glass">
+    <p style="font-size: 1.5em; font-weight: bold; margin: 0; color:#00eaff;">Educación</p>
+    <ul>
+      <li><strong>LLMs</strong> Train and Fine-tune LLMs for production</li>
+      <li><strong>Data Scientist</strong> TripleTen Bootcamp 2025-2026</li>
+      <li><strong>Máster</strong> Ciencia de Datos DEV.F 2023-2024</li>
+      <li><strong>Máster</strong> Ciberseguridad (UCAM) 2024–2025</li>
+      <li><strong>CFA</strong> Nivel I aprobado 2025</li>
+    </ul>
+  </aside>
+
+</section>
+    </div>
+  </section>
+  <section id="skills-visualization" class="skills-section about-main">
+  <div class="skills-container">
+    <div class="viz-box">
+      <h3 style="color:#00eaff;">Dashboard de precios Ajustados de Apple</h3>
+      <iframe
+        src="https://yahoo-finance-api-t2kz.onrender.com/"
+        width="100%"
+        height="450"
+        frameborder="0">
+      </iframe>
     </div>
   </div>
 </section>
 
-</main>
+  <main>
+    <!-- Proyectos -->
+    <section id="projects" class="projects container">
+      <h3>Proyectos</h3>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>
-      © Rafael García del Valle Torres · Edo. México ·
-      <a href="mailto:rafael.garcia.valle.torres@gmail.com">
-        rafael.garcia.valle.torres@gmail.com
-      </a>
-    </p>
-  </div>
-</footer>
+      <div class="projects-grid">
+        <article class="project-card glass">
+  <h4>Predicción del valor de autos usados con Machine Learning</h4>
+  <p>El proyecto consistió en desarrollar un modelo de machine learning para Rusty Bargain, una plataforma de venta de autos usados, con el objetivo de estimar el valor de mercado de los vehículos de forma rápida y precisa dentro de su aplicación; trabajé con un dataset que incluía información técnica y de uso de los autos, realizando un proceso de limpieza de datos que incluyó la eliminación de valores nulos, descarte de variables irrelevantes y la creación de una nueva variable geográfica a partir del código postal, seguido de la construcción y comparación de múltiples modelos como regresión lineal (baseline), Random Forest y algoritmos de gradient boosting como LightGBM y CatBoost, aplicando diferentes técnicas de codificación de variables categóricas (one-hot encoding y label encoding), además de medir no solo la calidad predictiva mediante RMSE sino también los tiempos de entrenamiento para evaluar su viabilidad en producción; los resultados mostraron que LightGBM logró el mejor desempeño global al ofrecer el menor error con tiempos de entrenamiento eficientes, superando a otros modelos y permitiendo recomendarlo como la mejor opción para implementación en la aplicación.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; pandas; NumPy; Scikit-learn; LightGBM; CatBoost; GitHub; Git</p>
+  <a class="btn btn-sm" href="https://github.com/rafael76-lab/Gradient-boosting-exercise" target="_blank">Link a GitHub</a>
+</article>
+        <article class="project-card glass">
+  <h4>Estimación de edad con visión por computadora para control de venta de alcohol</h4>
+  <p>El proyecto consistió en evaluar la viabilidad de utilizar modelos de visión por computadora para ayudar a la cadena de supermercados Good Seed a cumplir con la regulación que prohíbe la venta de alcohol a menores de edad, mediante la estimación automática de la edad de los clientes a partir de imágenes capturadas en el punto de venta; trabajé con un dataset de fotografías etiquetadas con la edad real, realizando un análisis exploratorio inicial para comprender la distribución de edades y la calidad de las imágenes, seguido de la construcción de un pipeline de entrenamiento en GPU utilizando TensorFlow y Keras, donde implementé técnicas de aumento de datos (rotaciones, zoom, desplazamientos) para mejorar la generalización del modelo, y desarrollé un modelo basado en transfer learning utilizando EfficientNetB3 preentrenado en ImageNet, al que se le añadió una cabeza personalizada con capas densas y regularización mediante dropout; el entrenamiento se realizó en dos fases, primero congelando la red base para entrenar únicamente la cabeza del modelo y posteriormente aplicando fine-tuning desbloqueando parcialmente las capas profundas para mejorar la precisión, utilizando función de pérdida Huber y la métrica MAE, junto con early stopping para evitar sobreajuste; los resultados demostraron que el modelo es capaz de estimar la edad con un error razonable, validando la hipótesis de que este enfoque puede ser utilizado como sistema de apoyo para detectar posibles menores de edad en tiempo real, proporcionando una base sólida para su implementación en un entorno productivo.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; pandas; TensorFlow; Keras; EfficientNet; Computer Vision; Data Augmentation; GPU; GitHub; Git</p>
+  <a class="btn btn-sm" href="https://github.com/rafael76-lab/First-AI-vision-model" target="_blank">Link a GitHub</a>
+</article>
+        <article class="project-card glass">
+  <h4>Clasificación de planes móviles con Machine Learning</h4>
+  <p>El proyecto consistió en desarrollar un modelo de clasificación para la empresa de telecomunicaciones Megaline, con el objetivo de recomendar automáticamente el plan más adecuado (Smart o Ultra) a sus clientes en función de su comportamiento mensual, ayudando así a migrar usuarios desde planes heredados hacia nuevas ofertas; trabajé con un dataset que incluía variables como número de llamadas, minutos consumidos, mensajes y uso de datos móviles, realizando la segmentación del conjunto en entrenamiento, validación y prueba para garantizar una evaluación robusta del modelo, seguido de la implementación y comparación de distintos algoritmos de clasificación como árbol de decisión, regresión logística y Random Forest, ajustando hiperparámetros clave como la profundidad del árbol y el número de estimadores para optimizar el desempeño, además de construir un modelo baseline basado en la moda para validar que los modelos entrenados capturaran patrones reales; la evaluación se realizó utilizando la métrica de exactitud, donde el modelo Random Forest obtuvo el mejor desempeño alcanzando un accuracy de 0.79 en el conjunto de prueba, superando el umbral requerido de 0.75, mientras que el árbol de decisión mostró resultados competitivos y la regresión logística tuvo un rendimiento inferior debido a su naturaleza lineal, confirmando que los modelos basados en árboles son más adecuados para este tipo de problema; como resultado, se identificó un modelo capaz de mejorar la toma de decisiones comerciales y optimizar la asignación de planes a clientes en un entorno real.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; pandas; Scikit-learn; Machine Learning; Clasificación; GitHub; Git</p>
+  <a class="btn btn-sm" href="https://github.com/rafael76-lab/Machine-learning-initiation" target="_blank">Link a GitHub</a>
+</article>
+        <article class="project-card glass">
+  <h4>Dashboard interactivo de visualización de datos con Streamlit y Plotly</h4>
+  <p>El proyecto consistió en desarrollar una aplicación web sencilla para la visualización de datos de anuncios de venta de coches, con el objetivo de permitir a los usuarios explorar la información de manera rápida y clara; la aplicación fue construida con Streamlit e incluye dos funcionalidades principales activadas mediante botones: la generación de un histograma para analizar la distribución de una variable y un diagrama de dispersión para observar la relación entre variables, utilizando Plotly para crear gráficos interactivos; el enfoque del proyecto fue mantener una interfaz minimalista y funcional, sin sobrecargarla con elementos visuales innecesarios, logrando una herramienta clara, accesible desde el navegador y desplegada en Render, que cumple con los criterios de evaluación y demuestra habilidades en visualización de datos y desarrollo de aplicaciones web básicas.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; Jupyter notebook; pandas; Streamlit; Plotly; GitHub; Git; render.com</p>
+  <a class="btn btn-sm" href="https://final-proyect-hxre.onrender.com/" target="_blank">Ver aplicación</a>
+</article>
+        <article class="project-card glass">
+  <h4>Análisis de datos de viajes compartidos y prueba de hipótesis con SQL y Python</h4>
+  <p>El proyecto consistió en realizar un análisis de datos para Zuber, una empresa de viajes compartidos en Chicago, con el objetivo de identificar patrones en el comportamiento de los usuarios, analizar la actividad de empresas competidoras y evaluar el impacto de factores externos como el clima en los viajes; trabajé con una base de datos relacional que incluía información de viajes, taxis, barrios y registros meteorológicos, utilizando SQL para realizar consultas complejas que permitieron calcular el número de viajes por empresa en periodos específicos, agrupar y segmentar compañías relevantes, y vincular datos de clima con viajes mediante joins por timestamp, además de clasificar condiciones meteorológicas en categorías como “Good” y “Bad”; posteriormente, complementé el análisis en Python con pandas para explorar datasets adicionales, identificar los barrios con mayor número de finalizaciones y generar visualizaciones que facilitaran la interpretación de los datos; finalmente, se llevó a cabo una prueba de hipótesis para evaluar si la duración de los viajes entre el Loop y el aeropuerto O’Hare cambia durante los sábados lluviosos, definiendo hipótesis nula y alternativa, seleccionando un nivel de significancia y aplicando pruebas estadísticas, lo que permitió confirmar diferencias en la duración bajo condiciones climáticas adversas y generar insights relevantes para la toma de decisiones estratégicas.</p>
+  <p class="meta"><strong>Tecnologías</strong> SQL; Python; pandas; SciPy; Plotly; Análisis de datos; Estadística</p>
+</article>
+<article class="project-card glass">
+  <h4>Dashboard Financiero Interactivo</h4>
+  <p>El proyecto consistió en desarrollar un dashboard financiero interactivo integrado en esta página con un doble objetivo: mejorar el aspecto visual del sitio y demostrar la capacidad de trabajar con datos en tiempo real; para ello, utilicé Python junto con pandas y la API de yfinance para extraer datos históricos y actualizados del precio de la acción de Apple, los cuales son procesados y visualizados mediante una aplicación construida con Streamlit que presenta la evolución del activo de forma clara y dinámica; el diseño del dashboard es intencionalmente simple, priorizando la claridad y funcionalidad, pero sentando una base sólida sobre la cual se podrían construir análisis financieros más avanzados como indicadores técnicos, modelos predictivos o estrategias de inversión, demostrando así habilidades tanto en integración de datos en tiempo real como en visualización interactiva.</p>
+  <p class="meta"><strong>Tecnologías</strong> Python; pandas; Streamlit; yfinance; GitHub; Render.com</p>
+  <a class="btn btn-sm" href="#skills-visualization">Ver dashboard</a>
+</article>
+      </div>
+    </section>
+  </main>
 
-<script src="main.js" defer></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        © Rafael García del valle Torres · Edo. México ·
+        <a href="mailto:rafaelgarciadelvalletorres@gmail.com">rafaelgarciadelvalletorres@gmail.com</a>
+      </p>
+    </div>
+  </footer>
 
+  <script src="main.js" defer></script>
 </body>
-
-<script src="main.js" defer></script>
-
 </html>
