@@ -11,148 +11,144 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
+<header class="site-header">
+  <div class="container header-inner">
 
-      <div class="brand brand-with-image">
-        <img
-          src="images/title.png"
-          srcset="
-            images/title-600x100.png 600w,
-            images/title-900x150.png 900w,
-            images/title.png 1200w
-          "
-          sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
-          alt="Mapa tecnológico estilo caricatura"
-          width="1200"
-          height="200"
-          class="brand-image"
-          loading="lazy"
-        >
+    <div class="brand brand-with-image">
+      <img
+        src="images/title.png"
+        srcset="images/title-600x100.png 600w, images/title-900x150.png 900w, images/title.png 1200w"
+        sizes="(max-width:600px) 90vw, (max-width:900px) 85vw, 1200px"
+        alt="Mapa tecnológico estilo caricatura"
+        width="1200"
+        height="200"
+        class="brand-image"
+      />
+    </div>
+
+    <nav class="nav" aria-label="Menú principal">
+      <a class="btn btn-outline" href="#projects">Proyectos</a>
+      <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>Descargar CV</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Nombre / Rol -->
+<section class="brand-text container">
+  <h1>Rafael García del Valle Torres</h1>
+  <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
+</section>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about" class="about container">
+
+  <div class="about-grid">
+
+    <figure class="about-photo">
+      <img src="images/profile.jpg" alt="Foto de Rafael García del Valle" loading="lazy" class="profile-img" />
+    </figure>
+
+    <div class="about-main">
+
+      <div class="about-content">
+        <h2>Acerca de mí</h2>
+
+        <div class="about-summary-box">
+          <p class="summary-text">
+            Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas...
+          </p>
+
+          <h4 class="summary-subtitle">Puntos clave</h4>
+
+          <ul class="summary-list">
+            <li><strong>Rol objetivo:</strong> Data Scientist Jr | Data Engineer Jr | AI Engineer Jr</li>
+            <li><strong>Base técnica:</strong> Python; SQL; Estadística; Git; GitHub; CatBoost; LightGBM; TensorFlow</li>
+            <li><strong>Experiencia:</strong> ETL y arquitectura de datos</li>
+            <li><strong>Proyectos:</strong> pipelines end-to-end y ML en producción</li>
+            <li><strong>Enfoque:</strong> automatización, escalabilidad e IA</li>
+          </ul>
+        </div>
       </div>
 
-      <nav class="nav" aria-label="Menú principal">
-        <a class="btn btn-outline" href="#projects">Proyectos</a>
-        <a class="btn btn-primary" href="Rafael_Garciadelvalle_CV.pdf" download>
-          Descargar CV
-        </a>
-      </nav>
+      <div class="about-meta">
+        <p><strong>Ubicación:</strong> Estado de México, México</p>
+        <p><strong>Stack:</strong> Python; SQL; Git; AWS</p>
+        <p><strong>Intereses:</strong> ML, data engineering, sistemas escalables</p>
+      </div>
 
     </div>
-  </header>
-
-  <!-- NOMBRE -->
-  <div class="brand-text container">
-    <h1>Rafael García del Valle Torres</h1>
-    <p class="role">Data Scientist · AI Engineer · Data Engineer</p>
   </div>
+</section>
 
-  <main>
-
-    <!-- ABOUT -->
-    <section id="about" class="about container">
-
-      <div class="about-grid">
-
-        <figure class="about-photo">
-          <img src="images/profile.jpg" alt="Foto de Rafael García del Valle" loading="lazy" class="profile-img" />
-        </figure>
-
-        <div class="about-main">
-
-          <div class="about-content">
-
-            <h2>Acerca de mí</h2>
-
-            <div class="about-summary-box">
-
-              <p class="summary-text">
-                Soy <strong>Rafael García del Valle Torres</strong>, profesional de datos con formación cuantitativa en finanzas y evolución hacia pipelines y modelos predictivos.
-                He trabajado con datasets masivos realizando ingestión, limpieza, validación y feature engineering.
-                En la <strong>Cámara de Diputados</strong> he desarrollado flujos end-to-end en Python.
-                Busco consolidarme como Data Scientist, AI Engineer o Data Engineer.
-              </p>
-
-              <h4 class="summary-subtitle">Puntos clave</h4>
-
-              <ul class="summary-list">
-                <li><strong>Rol objetivo:</strong> Data Scientist Jr | Data Engineer Jr | AI Engineer Jr</li>
-                <li><strong>Base técnica:</strong> Python; SQL; Git; ML frameworks</li>
-                <li><strong>Experiencia:</strong> ETL y pipelines</li>
-                <li><strong>Enfoque:</strong> automatización y escalabilidad</li>
-              </ul>
-
-            </div>
-
-          </div>
-
-          <div class="about-meta">
-            <p><strong>Ubicación:</strong> Estado de México, México</p>
-            <p><strong>Stack:</strong> Python, SQL, Git, AWS</p>
-            <p><strong>Intereses:</strong> ML, ingeniería de datos, sistemas escalables</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- DASHBOARD -->
-    <section class="container">
-      <h2>Dashboard en tiempo real</h2>
+<!-- DASHBOARD -->
+<section id="skills-visualization" class="skills-section about-main">
+  <div class="skills-container">
+    <div class="viz-box">
+      <h3 style="color:#00eaff;">Dashboard de precios Ajustados de Apple</h3>
 
       <iframe
         src="https://yahoo-finance-api-t2kz.onrender.com/"
         width="100%"
         height="450"
-        loading="lazy"
+        frameborder="0"
+        title="Dashboard financiero Apple"
       ></iframe>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="projects container">
-      <h2>Proyectos</h2>
-
-      <div class="projects-grid">
-        <!-- (tus proyectos se mantienen igual) -->
-      </div>
-
-      <!-- CONECTA -->
-      <div class="hero-card glass">
-        <h2 class="hero-title">Conecta conmigo</h2>
-
-        <div class="social-cards">
-          <!-- LinkedIn -->
-          <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
-            <span>LinkedIn</span>
-          </a>
-
-          <!-- GitHub -->
-          <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
-            <span>GitHub</span>
-          </a>
-
-          <!-- Email -->
-          <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
-            <span>Correo</span>
-          </a>
-        </div>
-      </div>
-
-    </section>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© Rafael García del Valle Torres · México</p>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="main.js" defer></script>
+<!-- PROYECTOS -->
+<section id="projects" class="projects container">
+  <h3>Proyectos</h3>
+
+  <div class="projects-grid">
+
+    <!-- (tus proyectos sin cambios estructurales) -->
+
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="info-grid">
+  <div class="hero-card glass">
+    <h2 class="hero-title">Conecta conmigo</h2>
+
+    <div class="social-cards">
+
+      <a class="social-card" href="https://www.linkedin.com/in/rafael-garc%C3%ADa-del-valle-torres/" target="_blank">
+        <span>LinkedIn</span>
+      </a>
+
+      <a class="social-card" href="https://github.com/rafael76-lab" target="_blank">
+        <span>GitHub</span>
+      </a>
+
+      <a class="social-card" href="mailto:rafael.garcia.valle.torres@gmail.com">
+        <span>Correo</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>
+      © Rafael García del Valle Torres · Edo. México ·
+      <a href="mailto:rafael.garcia.valle.torres@gmail.com">
+        rafael.garcia.valle.torres@gmail.com
+      </a>
+    </p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
 
 </body>
 
