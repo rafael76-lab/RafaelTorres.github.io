@@ -746,11 +746,16 @@ section{
 
 .info-grid > .hero-card{
   grid-column: 1 / -1;
-  width: 100%;
   position: relative;
+
+  width: 100vw;
   left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  transform: translateX(-50%);
+
   box-sizing: border-box;
+}
+
+/* Evita cualquier desbordamiento global accidental */
+html, body {
+  overflow-x: hidden;
 }
