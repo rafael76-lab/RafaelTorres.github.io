@@ -740,13 +740,9 @@ section{
     margin-bottom: 6px;
   }
 }
-/* ============================================================
-   FIX: hero-card full width REAL (sin tocar nada más)
-   ============================================================ */
-
-.hero-card{
-  grid-column: 1 / -1;          /* ocupa todo el grid */
-  width: 100vw;                 /* ocupa toda la pantalla */
-  margin-left: calc(50% - 50vw);/* rompe el container centrado */
+.info-grid > .hero-card{
+  grid-column: 1 / -1;           /* ocupa todo el ancho del grid */
+  width: 100vw;                  /* ocupa toda la pantalla */
+  margin-left: calc(50% - 50vw); /* rompe el centrado del container */
   box-sizing: border-box;
 }
