@@ -740,3 +740,8 @@ section{
     margin-bottom: 6px;
   }
 }
+.hero-card {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  box-sizing: border-box;
+}
