@@ -740,11 +740,13 @@ section{
     margin-bottom: 6px;
   }
 }
-.info-grid {
-  display: block !important;
-}
+/* ============================================================
+   FIX: hero-card full width REAL (sin tocar nada más)
+   ============================================================ */
 
-.hero-card {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+.hero-card{
+  grid-column: 1 / -1;          /* ocupa todo el grid */
+  width: 100vw;                 /* ocupa toda la pantalla */
+  margin-left: calc(50% - 50vw);/* rompe el container centrado */
+  box-sizing: border-box;
 }
