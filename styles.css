@@ -740,9 +740,14 @@ section{
     margin-bottom: 6px;
   }
 }
+/* ============================================================
+   FIX: hero-card full width SIN scroll horizontal
+   ============================================================ */
+
 .info-grid > .hero-card{
-  grid-column: 1 / -1;           /* ocupa todo el ancho del grid */
-  width: 100vw;                  /* ocupa toda la pantalla */
-  margin-left: calc(50% - 50vw); /* rompe el centrado del container */
+  grid-column: 1 / -1;        /* ocupa todo el grid */
+  width: 100%;                /* NO usar 100vw */
+  max-width: 100vw;           /* límite real del viewport */
+  margin-left: 0;             /* evita desbordes */
   box-sizing: border-box;
 }
