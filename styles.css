@@ -745,9 +745,12 @@ section{
    ============================================================ */
 
 .info-grid > .hero-card{
-  grid-column: 1 / -1;        /* ocupa todo el grid */
-  width: 100%;                /* NO usar 100vw */
-  max-width: 100vw;           /* límite real del viewport */
-  margin-left: 0;             /* evita desbordes */
+  grid-column: 1 / -1;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   box-sizing: border-box;
 }
