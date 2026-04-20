@@ -769,10 +769,10 @@ html, body {
   width: 100%;
 }
 #projects h3 {
-  color: var(--accent);
-  font-family: 'JetBrains Mono', monospace;
+  color: #00eaff !important;
+  font-family: 'JetBrains Mono', monospace !important;
   text-shadow: 
     0 0 5px #00eaff,
     0 0 10px #00eaff,
-    0 0 20px #00eaff44;
+    0 0 20px #00eaff88 !important;
 }
