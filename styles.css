@@ -770,9 +770,5 @@ html, body {
 }
 #projects h3 {
   color: #00eaff !important;
-  font-family: 'JetBrains Mono', monospace !important;
-  text-shadow: 
-    0 0 5px #00eaff,
-    0 0 10px #00eaff,
-    0 0 20px #00eaff88 !important;
+  -webkit-text-fill-color: #00eaff !important; /* por si hay efectos tipo gradient/text-fill */
 }
