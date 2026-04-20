@@ -121,7 +121,7 @@ Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</str
 
     <strong>Proceso:</strong> Se trabajó con un dataset que incluía información técnica y de uso de los autos. Se realizó un proceso de limpieza de datos que incluyó la eliminación de valores nulos, descarte de variables irrelevantes y la creación de una nueva variable geográfica a partir del código postal. Posteriormente, se construyeron y compararon múltiples modelos como regresión lineal (baseline), Random Forest y algoritmos de gradient boosting como LightGBM y CatBoost. Se aplicaron técnicas de codificación de variables categóricas (one-hot encoding y label encoding), además de evaluar tanto la calidad predictiva mediante RMSE como los tiempos de entrenamiento para analizar su viabilidad en producción.<br><br>
 
-    <strong>Resultado y visuales:</strong> LightGBM logró el mejor desempeño global, obteniendo el menor error (RMSE) con tiempos de entrenamiento eficientes, superando a los demás modelos. Esto permitió recomendarlo como la mejor opción para implementación en la aplicación.<br><br>
+    <strong>Resultado:</strong> LightGBM logró el mejor desempeño global, obteniendo el menor error (RMSE) con tiempos de entrenamiento eficientes, superando a los demás modelos. Esto permitió recomendarlo como la mejor opción para implementación en la aplicación.<br><br>
 
     <strong>Lección o hallazgos:</strong> Los modelos de gradient boosting pueden superar ampliamente a enfoques tradicionales en problemas de regresión. Además, no solo la precisión es importante, sino también la eficiencia computacional en entornos productivos. La preparación adecuada de los datos tiene un impacto crítico en el desempeño del modelo.
   </p>
@@ -135,7 +135,7 @@ Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</str
 
     <strong>Proceso:</strong> Se trabajó con un dataset de fotografías etiquetadas con la edad real. Se realizó un análisis exploratorio inicial para comprender la distribución de edades y la calidad de las imágenes. Posteriormente, se construyó un pipeline de entrenamiento en GPU utilizando TensorFlow y Keras, aplicando técnicas de aumento de datos (rotaciones, zoom y desplazamientos) para mejorar la generalización. Se desarrolló un modelo basado en transfer learning utilizando EfficientNetB3 preentrenado en ImageNet, al que se añadió una cabeza personalizada con capas densas y regularización mediante dropout. El entrenamiento se llevó a cabo en dos fases: primero congelando la red base para entrenar la cabeza del modelo, y posteriormente aplicando fine-tuning desbloqueando parcialmente capas profundas. Se utilizó la función de pérdida Huber, la métrica MAE y early stopping para evitar sobreajuste.<br><br>
 
-    <strong>Resultado y visuales:</strong> El modelo logró estimar la edad con un error razonable, validando la viabilidad del enfoque como sistema de apoyo para identificar posibles menores de edad en tiempo real. Esto proporciona una base sólida para su implementación en entornos productivos dentro del punto de venta.<br><br>
+    <strong>Resultado:</strong> El modelo logró estimar la edad con un error razonable, validando la viabilidad del enfoque como sistema de apoyo para identificar posibles menores de edad en tiempo real. Esto proporciona una base sólida para su implementación en entornos productivos dentro del punto de venta.<br><br>
 
     <strong>Lección o hallazgos:</strong> El uso de transfer learning permite obtener buenos resultados incluso con datasets limitados. Las técnicas de aumento de datos son clave para mejorar la generalización en problemas de visión por computadora. El fine-tuning progresivo de redes profundas puede incrementar significativamente la precisión del modelo.
   </p>
@@ -149,7 +149,7 @@ Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</str
 
     <strong>Proceso:</strong> Se trabajó con un dataset que incluía variables como número de llamadas, minutos consumidos, mensajes y uso de datos móviles. Se realizó la segmentación en conjuntos de entrenamiento, validación y prueba para garantizar una evaluación robusta. Posteriormente, se implementaron y compararon distintos algoritmos de clasificación como árbol de decisión, regresión logística y Random Forest, ajustando hiperparámetros clave como la profundidad del árbol y el número de estimadores. Además, se construyó un modelo baseline basado en la moda para validar que los modelos entrenados capturaran patrones reales.<br><br>
 
-    <strong>Resultado y visuales:</strong> El modelo Random Forest obtuvo el mejor desempeño, alcanzando un accuracy de 0.79 en el conjunto de prueba y superando el umbral requerido de 0.75. El árbol de decisión mostró resultados competitivos, mientras que la regresión logística tuvo un rendimiento inferior debido a su naturaleza lineal. Esto permitió identificar un modelo viable para mejorar la toma de decisiones comerciales.<br><br>
+    <strong>Resultado:</strong> El modelo Random Forest obtuvo el mejor desempeño, alcanzando un accuracy de 0.79 en el conjunto de prueba y superando el umbral requerido de 0.75. El árbol de decisión mostró resultados competitivos, mientras que la regresión logística tuvo un rendimiento inferior debido a su naturaleza lineal. Esto permitió identificar un modelo viable para mejorar la toma de decisiones comerciales.<br><br>
 
     <strong>Lección o hallazgos:</strong> Los modelos basados en árboles son más adecuados para capturar relaciones no lineales en datos de comportamiento de usuarios. La comparación con un baseline es fundamental para validar la utilidad real del modelo. El ajuste de hiperparámetros tiene un impacto directo en el desempeño final.
   </p>
@@ -157,13 +157,13 @@ Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</str
   <a class="btn btn-sm" href="https://github.com/rafael76-lab/Machine-learning-initiation" target="_blank">Link a GitHub</a>
 </article>
        <article class="project-card glass">
-  <h4>Dashboard interactivo de visualización de datos con Streamlit y Plotly</h4>
+  <h4>Desarrollo de Dashboard interactivo de visualización de datos con Streamlit y Plotly</h4>
   <p>
     <strong>Desafío:</strong> Desarrollar una aplicación web para la visualización de datos de anuncios de venta de coches, permitiendo a los usuarios explorar la información de manera rápida, clara e interactiva desde el navegador.<br><br>
 
     <strong>Proceso:</strong> Se construyó una aplicación utilizando Streamlit como framework principal. Se trabajó con un dataset de anuncios de venta de coches, realizando el procesamiento necesario para su visualización. La aplicación incluye dos funcionalidades principales activadas mediante botones: un histograma para analizar la distribución de una variable y un diagrama de dispersión para explorar la relación entre variables. Se utilizó Plotly para generar gráficos interactivos. El diseño se mantuvo minimalista, priorizando claridad y facilidad de uso sin sobrecargar la interfaz.<br><br>
 
-    <strong>Resultado y visuales:</strong> Se desarrolló una aplicación funcional, accesible desde el navegador y desplegada en Render, que permite la exploración interactiva de datos mediante visualizaciones dinámicas. La herramienta cumple con los criterios de evaluación y facilita el análisis rápido de patrones en los datos.<br><br>
+    <strong>Resultado:</strong> Se desarrolló una aplicación funcional, accesible desde el navegador y desplegada en Render, que permite la exploración interactiva de datos mediante visualizaciones dinámicas. La herramienta cumple con los criterios de evaluación y facilita el análisis rápido de patrones en los datos.<br><br>
 
     <strong>Lección o hallazgos:</strong> La combinación de Streamlit y Plotly permite construir aplicaciones de visualización de datos de forma rápida y efectiva. Un diseño simple mejora la experiencia del usuario y facilita la interpretación de la información. La interactividad es clave para explorar relaciones y distribuciones en datasets reales.
   </p>
@@ -177,20 +177,20 @@ Busco consolidarme como <strong>Data Scientist, AI Engineer o Data Engineer</str
 
     <strong>Proceso:</strong> Se trabajó con una base de datos relacional que incluía información de viajes, taxis, barrios y registros meteorológicos. Se utilizaron consultas SQL para calcular el número de viajes por empresa en periodos específicos, agrupar compañías relevantes y vincular datos de clima con viajes mediante joins por timestamp, además de clasificar condiciones meteorológicas en categorías como “Good” y “Bad”. Posteriormente, el análisis se complementó en Python con pandas para explorar datasets adicionales, identificar los barrios con mayor número de finalizaciones y generar visualizaciones que facilitaran la interpretación.<br><br>
 
-    <strong>Resultado y visuales:</strong> Se identificaron patrones relevantes en la actividad de viajes y en el desempeño de empresas competidoras. La prueba de hipótesis mostró que la duración de los viajes entre el Loop y el aeropuerto O’Hare cambia durante los sábados lluviosos, confirmando diferencias bajo condiciones climáticas adversas y generando insights útiles para la toma de decisiones estratégicas.<br><br>
+    <strong>Resultado:</strong> Se identificaron patrones relevantes en la actividad de viajes y en el desempeño de empresas competidoras. La prueba de hipótesis mostró que la duración de los viajes entre el Loop y el aeropuerto O’Hare cambia durante los sábados lluviosos, confirmando diferencias bajo condiciones climáticas adversas y generando insights útiles para la toma de decisiones estratégicas.<br><br>
 
     <strong>Lección o hallazgos:</strong> La integración de SQL y Python permite realizar análisis más completos y robustos en entornos de datos reales. Las condiciones externas como el clima pueden tener un impacto significativo en variables operativas. El uso de pruebas de hipótesis es clave para validar si los patrones observados son estadísticamente significativos.
   </p>
   <p class="meta"><strong>Tecnologías</strong> SQL; Python; pandas; SciPy; Plotly; Análisis de datos; Estadística</p>
 </article>
 <article class="project-card glass">
-  <h4>Dashboard Financiero Interactivo</h4>
+  <h4>Dashboard de precios Ajustados de Apple</h4>
   <p>
     <strong>Desafío:</strong> Desarrollar un dashboard financiero interactivo integrado en la página con el objetivo de mejorar la experiencia visual del sitio y demostrar la capacidad de trabajar con datos en tiempo real.<br><br>
 
     <strong>Proceso:</strong> Se utilizó Python junto con pandas y la API de yfinance para extraer datos históricos y actualizados del precio de la acción de Apple. Estos datos fueron procesados y visualizados mediante una aplicación construida con Streamlit, enfocada en mostrar la evolución del activo de forma clara y dinámica. El diseño se mantuvo intencionalmente simple, priorizando la funcionalidad y la legibilidad de la información.<br><br>
 
-    <strong>Resultado y visuales:</strong> Se desarrolló un dashboard interactivo integrado en el sitio, capaz de mostrar datos financieros actualizados en tiempo real. La herramienta permite visualizar la evolución del activo de manera intuitiva, mejorando tanto la estética como la funcionalidad de la página.<br><br>
+    <strong>Resultado:</strong> Se desarrolló un dashboard interactivo integrado en el sitio, capaz de mostrar datos financieros actualizados en tiempo real. La herramienta permite visualizar la evolución del activo de manera intuitiva, mejorando tanto la estética como la funcionalidad de la página.<br><br>
 
     <strong>Lección o hallazgos:</strong> La integración de APIs financieras permite construir soluciones dinámicas con datos en tiempo real. Un diseño simple puede ser más efectivo para comunicar información compleja. Este tipo de dashboards sirve como base para desarrollar análisis más avanzados como indicadores técnicos, modelos predictivos o estrategias de inversión.
   </p>
