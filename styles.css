@@ -768,9 +768,3 @@ html, body {
   text-align: center !important;
   width: 100%;
 }
-#projects h3 {
-  color: var(--accent) !important;
-  text-shadow: none !important;
-  -webkit-text-fill-color: var(--accent) !important;
-  font-family: 'JetBrains Mono', monospace;
-}
