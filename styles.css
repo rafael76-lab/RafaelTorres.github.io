@@ -769,6 +769,8 @@ html, body {
   width: 100%;
 }
 #projects h3 {
-  color: #00eaff !important;
-  -webkit-text-fill-color: #00eaff !important; /* por si hay efectos tipo gradient/text-fill */
+  color: var(--accent) !important;
+  text-shadow: none !important;
+  -webkit-text-fill-color: var(--accent) !important;
+  font-family: 'JetBrains Mono', monospace;
 }
