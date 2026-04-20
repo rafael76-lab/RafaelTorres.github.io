@@ -759,3 +759,12 @@ section{
 html, body {
   overflow-x: hidden;
 }
+.social-cards {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  flex-wrap: wrap !important;
+  text-align: center !important;
+  width: 100%;
+}
